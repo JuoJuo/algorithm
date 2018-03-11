@@ -1,0 +1,19 @@
+{
+  "name": "webpack001",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "webpack --profile",
+    "see": "webpack --profile --json > stats.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "webpack": "^3.5.5",
+    "webpack-bundle-analyzer": "^2.11.1"
+  }
+}
