@@ -1,0 +1,14 @@
+{
+  "name": "webpack006",
+  "version": "1.0.0",
+  "description": "treeShaking",
+  "main": "webpack.config.js",
+  "scripts": {
+    "server": "webpack-dev-server --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.5.6"
+  }
+}

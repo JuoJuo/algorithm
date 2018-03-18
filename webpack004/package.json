@@ -1,0 +1,16 @@
+{
+  "name": "webpack004",
+  "version": "1.0.0",
+  "description": "require.ensure(['lodash'], function(){\r      var _ = require('lodash');\r  }, 'vendor');",
+  "main": "moduleA.js",
+  "scripts": {
+    "dev": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^3.5.5",
+    "webpack-bundle-analyzer": "^2.11.1"
+  }
+}

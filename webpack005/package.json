@@ -1,0 +1,16 @@
+{
+  "name": "webpack005",
+  "version": "1.0.0",
+  "description": "style-loader---------------创建style标签\r style-loader/url\r style-loader/useable\r css-loader-----------------在js里可以import css的",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.10",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.20.3"
+  }
+}
