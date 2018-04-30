@@ -1,0 +1,24 @@
+<html>
+    <body>
+        
+        <div id='app'>
+            <input type="text" v-model="message.a">
+            <div>{{ message.a }}</div>
+        </div>
+    </body>
+
+    <script src="./watcher.js"></script>
+    <script src="./observer.js"></script>
+    <script src="./compile.js"></script>
+    <script src="./mvvm.js"></script>
+    <script>
+        new MVVM({
+            el: 'app',
+            data: {
+                message: {
+                    a: 'this is not hello world'
+                }
+            }
+        })
+    </script>
+</html>

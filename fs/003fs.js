@@ -105,8 +105,9 @@ function removeDirAsync(dir) {
                 fs.readdir(dir, (err, files) => {
                     // 拼接全路径
                     files = files.map(file => path.join(dir, file))
-                    // 目录下的每一个都再remove一下，是文件的直接删
+                    // 目录下的每一个都再传进去移除remove一下，是文件的直接删
                     files = files.map(file => removePromise(file))
+                    // 同一级的有多个文件，因为都是异步的，只有同时删除成功才能最后移除最上层的文件夹
                     Promise.all(files).then(function () {
                         fs.rmdir(dir, resolve)
                     })
