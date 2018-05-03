@@ -36,7 +36,7 @@ console.log('要求在${}前后都加个(),但手动操作太麻烦');
 
 // tag名字随便起的   ...剩余运算符智能在函数最后使用（万一 ${name}太多，但又不确定有多少个）
 function tag(arrs, ...args) {
-    let args = Array.prototype.slice.call(arguments, 1)
+    let args2 = Array.prototype.slice.call(arguments, 1)
     console.log(arrs)
     console.log(args)
     let str = '';
@@ -45,6 +45,7 @@ function tag(arrs, ...args) {
     }
     return str;
 }
+let name = '张三'
 let newStr = tag`this is not ${name}`;
 console.log(newStr)
 
